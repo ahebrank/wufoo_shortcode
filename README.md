@@ -1,4 +1,4 @@
-# Wufoo shorttags in EE
+# Wufoo shortcode in EE
 
 This is an attempt to let clients embed Wufoo forms into their pages with the Wufoo-provide WP shortcode in e.g., a wysiwyg field:
 

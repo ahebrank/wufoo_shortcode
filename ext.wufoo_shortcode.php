@@ -153,7 +153,7 @@ class WufooShortcode_ext {
         $snippet = ob_get_clean();
       }
         
-      $final_template = str_replace($shortcode, $snippet, $final_template)
+      $final_template = str_replace($shortcode, $snippet, $final_template);
     }
 
     return $final_template;
