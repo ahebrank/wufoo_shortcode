@@ -149,7 +149,7 @@ class Wufoo_shortcode_ext {
       else {
         // load the wufoo snippet and sub in params
         ob_start();
-        include('wufoo_snippet.php');
+        require('wufoo_snippet.php');
         $snippet = ob_get_clean();
       }
         
