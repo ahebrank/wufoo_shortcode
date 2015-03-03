@@ -15,10 +15,10 @@ if (!function_exists('ee')) {
 }
 
 
-class WufooShortcode_ext {
+class Wufoo_shortcode_ext {
 
   public $settings = array();
-  public $name = 'WufooShortcode';
+  public $name = 'Wufoo_shortcode';
   public $version = '0.1';
   public $description = 'Shortcodes for embedding Wufoo forms.';
   public $settings_exist = 'n';
