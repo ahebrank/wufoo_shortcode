@@ -11,10 +11,9 @@ var s = d.createElement(t), options = {
 'async':true,
 'host':'wufoo.com',
 'header':'<?=$params['header']?>',
-'ssl':<?=$params['ssl']?>?>;
+'ssl':<?=$params['ssl']?>};
 s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
 s.onload = s.onreadystatechange = function() {
 var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-try { <?=$params['formhash']?> = new WufooForm();<?=$params['formhash']?>.initialize(options);<?=$params['formhash']?>.display(); ?> catch (e) {?>?>;
-var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-?>)(document, 'script');</script>
+try { <?=$params['formhash']?> = new WufooForm();<?=$params['formhash']?>.initialize(options);<?=$params['formhash']?>.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);})(document, 'script');</script>
