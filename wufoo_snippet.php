@@ -4,7 +4,7 @@ Fill out my <a href="https://<?=$params['username']?>.wufoo.com/forms/<?=$params
 <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">HTML Forms powered by <a href="http://www.wufoo.com">Wufoo</a>.</div>
 <script type="text/javascript">var <?=$params['formhash']?>;(function(d, t) {
 var s = d.createElement(t), options = {
-'userName':'vtperformingarts',
+'userName':'<?=$params['username']?>',
 'formHash':'<?=$params['formhash']?>',
 'autoResize':<?=$params['autoresize']?>,
 'height':'<?=$params['height']?>',
